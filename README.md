@@ -28,7 +28,7 @@ Este é um guia simples para a turma colaborar no projeto usando GitHub.
 ### Passo 4: Sincronizar seu Fork com o Projeto Original
 - **Sincronizar** é atualizar seu fork com as mudanças que o professor fez.
 - Primeiro, vá para a branch principal (linha principal do projeto): `git checkout main`
-- Depois, traga as novidades do projeto original: `git pull upstream main`
+- Depois, traga as novidades do projeto original: `git pull upstream main`.
 
 
 ### Passo 5: Criar uma Branch para Cada Atividade
