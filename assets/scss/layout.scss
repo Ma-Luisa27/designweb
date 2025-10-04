@@ -54,7 +54,8 @@ $break-watch: 400px;
 .trabalhos{
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    overflow-y: hidden
+    overflow-y: hidden;
+    scrollbar-width: none;
 }
 
 .trabalhos li{

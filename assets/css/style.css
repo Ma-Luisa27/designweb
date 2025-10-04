@@ -44,6 +44,7 @@
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   overflow-y: hidden;
+  scrollbar-width: none;
 }
 
 .trabalhos li {
@@ -138,6 +139,9 @@ h5 {
   }
   figure img {
     width: 100%;
+  }
+  .trabalhos {
+    scrollbar-width: none;
   }
 }
 
