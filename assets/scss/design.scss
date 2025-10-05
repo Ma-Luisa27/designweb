@@ -7,6 +7,8 @@ $cor-bg-button: #3F8E00;
 $cor-text-title: #FFFFFF;
 $cor-text-body: #9C9C9C;
 $cor-border-button: #62BA1B;
+$cor-focus-nav: #555555;
+$cor-focus-button: #62BA1B;
 
 body{
     font-family: $font-texto;
@@ -18,6 +20,7 @@ body{
 
 nav{
     background-color: $cor-bg-body-nav;
+    border-radius: 0 0 6px 6px;
     a{
         color: $cor-text-body;
     }
@@ -76,4 +79,16 @@ li img{
 
 h5{
     font-size: 14px;
+}
+
+input:focus-visible{
+    background-color: $cor-focus-nav;
+}
+
+a:focus-visible{
+    background-color: $cor-focus-nav;
+}
+
+.perfil button:focus-visible{
+    background-color: $cor-focus-button;
 }
