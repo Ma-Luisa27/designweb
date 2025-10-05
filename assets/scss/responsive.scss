@@ -4,6 +4,7 @@
     }
     button{
         width: 100%;
+        margin-bottom: 100px;
     }
     figure{
         margin: 0;
@@ -12,6 +13,29 @@
         width: 100%;
     }
     .trabalhos{
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        overflow-y: hidden;
         scrollbar-width: none;
+        flex-wrap: nowrap;
     }
+    .lista1-responsividade{
+        display: none;
+    }
+    .lista2-responsividade{
+        display: flex;
+    }
+    .ocultar-checkbox{
+        display: none;
+    }
+    .botao-alterar{
+        display: flex;
+        cursor: pointer;
+    }
+    .ocultar-checkbox:checked ~ .lista1-responsividade{
+        max-height: 200px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        display: flex;
+}
 }
