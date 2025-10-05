@@ -3,16 +3,20 @@ $cor-bg-body-nav: #1B1B1B;
     .principal{
         flex-direction: column-reverse;
     }
+
     button{
         width: 100%;
         margin-bottom: 100px;
     }
+
     figure{
         margin: 0;
     }
+
     figure img{
         width: 100%;
     }
+
     .trabalhos{
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
@@ -20,19 +24,24 @@ $cor-bg-body-nav: #1B1B1B;
         scrollbar-width: none;
         flex-wrap: nowrap;
     }
+
     .lista1-responsividade{
         display: none;
     }
+
     .lista2-responsividade{
         display: flex;
     }
+
     .ocultar-checkbox{
         display: none;
     }
+
     .botao-alterar{
         display: flex;
         cursor: pointer;
     }
+
     .ocultar-checkbox:checked ~ .lista1-responsividade{
         margin-top: 100px;
         background-color: $cor-bg-body-nav;
@@ -45,11 +54,14 @@ $cor-bg-body-nav: #1B1B1B;
     header nav{
         flex-direction: row-reverse;
     }
+
     nav ul li img{
         margin-right: 3px;
         margin-left: 20px;
     }
+
     .ajustar-tamanho-nav{
         padding: 10px;
     }
+    
 }
