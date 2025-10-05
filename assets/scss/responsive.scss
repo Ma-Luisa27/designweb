@@ -1,3 +1,4 @@
+$cor-bg-body-nav: #1B1B1B;
 @media(max-width: 667.98px){
     .principal{
         flex-direction: column-reverse;
@@ -33,9 +34,15 @@
         cursor: pointer;
     }
     .ocultar-checkbox:checked ~ .lista1-responsividade{
-        max-height: 200px;
-        padding: 10px;
-        background-color: #f8f9fa;
-        display: flex;
+        margin-top: 100px;
+        background-color: $cor-bg-body-nav;
+        position: absolute;
+        display: block;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    nav{
+        flex-direction: row-reverse;
+    }
 }
-}
+

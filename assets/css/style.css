@@ -171,10 +171,15 @@ h5 {
     cursor: pointer;
   }
   .ocultar-checkbox:checked ~ .lista1-responsividade {
-    max-height: 200px;
-    padding: 10px;
-    background-color: #f8f9fa;
-    display: flex;
+    margin-top: 100px;
+    background-color: #1B1B1B;
+    position: absolute;
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  nav {
+    flex-direction: row-reverse;
   }
 }
 
