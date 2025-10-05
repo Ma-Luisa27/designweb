@@ -41,8 +41,16 @@ $cor-bg-body-nav: #1B1B1B;
         padding: 20px;
         border-radius: 20px;
     }
-    nav{
+    
+    header nav{
         flex-direction: row-reverse;
     }
+    nav ul li img{
+        margin-right: 3px;
+        margin-left: 20px;
+    }
+    .ajustar-tamanho-nav{
+        padding: 10px;
+    }
+    
 }
-
