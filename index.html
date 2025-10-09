@@ -3,63 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lista 3 - Layout - Flex-Grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="container dividir-extremidades ajustar-tamanho-nav">
-            <input type="checkbox" id="alternar_menu" class="ocultar-checkbox">
-            <label for="alternar_menu" class="botao-alterar">
-            <ul class="menu lista-sem-estilo display flex espacamento-itens-lista lista2-responsividade">
-                <li class="lista2-responsividade"><img src="assets/img/ícone-menu-hamburguer.svg" alt="Ícone de menu hambúrguer (três traços)">Menu</li>
-            </ul>
-            </label>
-            <ul class="menu lista-sem-estilo display-flex espacamento-itens-lista lista1-responsividade">
-                <li><a href="#" class="link-sem-decoracao">Estudos de Casos</a></li>
-                <li><a href="#" class="link-sem-decoracao">Trabalhos</a></li>
-                <li><a href="#" class="link-sem-decoracao">Entre em contato</a></li>
-            </ul>
-            <ul class="menu display-flex lista-sem-estilo espacamento-itens-lista">
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="container principal">
-            <div class="perfil">
-                <h1>Maria Luísa</h1>
-                <h3>UX e Dev Front-end</h3>
-                <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button>
-                    Vamos trabalhar junto <i class="fa-solid fa-chevron-right"></i>
-                </button>
-            </div>
-            <div class="imagem">
-                <figure>
-                    <img src="assets/img/Foto_de_perfil.png" alt="Foto da Maria Luísa">
-                </figure>
-            </div>
-        </section>
-        <section class="container alinhar-coluna">
-            <h5>Trabalhou em:</h5>
-            <ul class="display-flex espacamento-itens-lista lista-sem-estilo dividir-extremidades trabalhos ">
-                <li class="borda-itens-lista"><img src="assets/img/clickup.svg" alt="Logo Clickup"></li>
-                <li class="borda-itens-lista"><img src="assets/img/dropbox.svg" alt="Logo Dropbox"></li>
-                <li class="borda-itens-lista"><img src="assets/img/paychex.svg" alt="Logo Paychex"></li>
-                <li class="borda-itens-lista"><img src="assets/img/elastic.svg" alt="Logo Elastic"></li>
-                <li class="borda-itens-lista"><img src="assets/img/stripe.svg" alt="Logo Stripe"></li>
-            </ul>
-        </section>
-    </main>
+    <section class="grid grid-cols-2 gap-6 mx-auto max-w-2xl rounded shadow-inner shadow-emerald-400/50 bg-emerald-200  mt-6 p-4 items-center justify-center space-x-6 space-y-4">
+        <div>
+            <h1 class="font-[700] text-3xl leading-relaxed text-stone-900">Esportes</h1>
+            <h2 class="font-[600] text-xl leading-relaxed text-stone-900">Skate</h2>
+            <p class="font-[400] text-lg tracking-tight leading-relaxed text-stone-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate saepe porro ea excepturi soluta explicabo et amet totam perferendis consequatur harum maxime. Amet aspernatur ea repellat necessitatibus explicabo voluptate.</p>
+        </div>
+        <div>
+            <img src="assets/img/Imagem-Placeholder.jpg" alt="Imagem de homem fazendo manobras com skate" class="rounded">
+        </div>
+    </section>
 </body>
 </html>
+
+<!-- 
+    Estrutura escolhida: grid
+    Para esta atividade, optei por utilizar grid, pois, nesse primeiro contato, achei relativamente simples o uso e acredito que funcionou bem para essa prática.
+-->
+    
