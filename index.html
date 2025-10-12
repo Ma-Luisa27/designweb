@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista 3 - Layout - Flex-Grid</title>
+    <title>Lista 4 - Componentes Reutilizáveis</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="grid grid-cols-2 gap-6 mx-auto max-w-2xl rounded shadow-inner shadow-emerald-400/50 bg-emerald-200  mt-6 p-4 items-center justify-center space-x-6 space-y-4">
-        <div>
-            <h1 class="font-[700] text-3xl leading-relaxed text-stone-900">Esportes</h1>
-            <h2 class="font-[600] text-xl leading-relaxed text-stone-900">Skate</h2>
-            <p class="font-[400] text-lg tracking-tight leading-relaxed text-stone-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate saepe porro ea excepturi soluta explicabo et amet totam perferendis consequatur harum maxime. Amet aspernatur ea repellat necessitatibus explicabo voluptate.</p>
-        </div>
-        <div>
-            <img src="assets/img/Imagem-Placeholder.jpg" alt="Imagem de homem fazendo manobras com skate" class="rounded">
-        </div>
+    <section class="grid md:grid-cols-3 gap-6 mx-auto mt-6 p-4 justify-center space-x-6 space-y-4">
+    <div class="card bg-amber-200 justify-items-center mx-auto rounded m-6 p-4">
+        <h1 class="font-[700] text-3xl leading-relaxed text-stone-900">Cachorro</h1>
+        <p class="font-[400] text-lg tracking-tight leading-relaxed text-stone-800">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolore asperiores exercitationem temporibus, recusandae aperiam magni rerum minima vitae iste, enim modi amet. Magnam, ipsum voluptatem quae quaerat repudiandae commodi quibusdam blanditiis debitis. Tempora voluptatibus earum iusto tempore, dolorem totam dolorum esse impedit amet, minima aperiam quia debitis exercitationem! Sunt nobis numquam autem, accusantium eius animi consectetur blanditiis pariatur soluta rem, eaque repudiandae harum. Animi voluptates quae iusto perspiciatis fuga repellat blanditiis quibusdam. Odit cupiditate ratione tempore provident dolor excepturi amet facilis optio quisquam architecto sint sed, nihil harum consectetur aut veritatis et, voluptatem consequuntur corporis? Nam nobis placeat reprehenderit iure id ipsum deleniti aut ipsa quam accusamus suscipit officia incidunt corrupti, vitae distinctio earum numquam, eaque similique eos! Debitis doloremque culpa ducimus unde distinctio blanditiis ex perspiciatis, fugiat numquam eligendi aut cum accusantium voluptatem dicta labore laboriosam atque enim aperiam ab sint laudantium dolor nulla totam! Mollitia, neque quidem? Itaque inventore vero labore esse sint nobis assumenda vel, iusto beatae repudiandae neque est mollitia alias obcaecati vitae quo! Impedit inventore tempore asperiores tempora voluptatibus exercitationem eius autem ipsum expedita temporibus cupiditate fugiat possimus, reiciendis non sint distinctio error dolor incidunt dolores aut consequuntur modi neque. Eum dicta suscipit nostrum!</p>
+        <button class="bg-amber-300 p-4 px-8">Acessar produtos</button>
+    </div>
+    <div class="card bg-sky-200 justify-items-center mx-auto rounded m-6 p-4">
+        <h1 class="font-[700] text-3xl leading-relaxed text-stone-900">Gato</h1>
+        <p class="font-[400] text-lg tracking-tight leading-relaxed text-stone-800">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda tempore odit voluptatibus voluptatem obcaecati tempora, pariatur consequuntur ea dolorum facere et molestias magnam, fugit dolores atque. Veritatis ratione velit consequuntur nulla iusto officiis, odio rerum repellat tempora sit unde! Fuga distinctio aperiam doloremque rerum laboriosam est unde maiores ullam dolorum soluta? Alias sit asperiores ipsam cumque, soluta harum recusandae, quidem quae autem molestias delectus possimus cum error eveniet distinctio dolorum porro, exercitationem culpa iste expedita quis! Quae, possimus nam? Dignissimos quam sed laudantium, qui in corrupti alias quasi quia suscipit dolore sapiente dicta reprehenderit, voluptas voluptatibus vero voluptatem voluptate vel earum soluta, ratione minus deserunt sequi! Voluptatem aut eveniet adipisci voluptatum quaerat. Corrupti nobis officia, cupiditate magnam necessitatibus temporibus et fugiat nihil magni qui, maiores reprehenderit reiciendis laboriosam itaque saepe ex veniam cum iure incidunt doloremque suscipit quos alias. Corrupti voluptates fugit sit nobis dolore iusto iure est ad quibusdam, eligendi quod nam repudiandae expedita quas asperiores modi, accusantium ratione quae sapiente! Voluptatibus nisi laboriosam ipsa ipsum libero illum doloremque, atque, modi tempore sequi itaque sed officiis veritatis quia maxime veniam asperiores neque sunt magni natus vitae amet omnis commodi minima. Accusamus, quisquam sed aut, voluptatem corporis, assumenda dolore aperiam quo quia dolor labore corrupti a dolores adipisci! Rerum, repellat! Dolores, eius. Architecto sequi possimus aliquam cum quaerat modi molestiae veritatis nemo nisi, minima assumenda consequatur ea, ratione harum et placeat delectus sapiente tempora natus optio illo! Inventore, possimus aperiam!</p>
+        <button class="bg-sky-300 p-4 px-8">Acessar produtos</button>
+    </div>
+    <div class="card bg-lime-200 justify-items-center mx-auto rounded m-6 p-4">
+        <h1 class="font-[700] text-3xl leading-relaxed text-stone-900">Porquinho da índia</h1>
+        <p class="font-[400] text-lg tracking-tight leading-relaxed text-stone-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim dolorem repellat sunt facere tempora natus reiciendis soluta obcaecati dolorum sint eaque quis mollitia officiis blanditiis aut, ex quas sequi quae, ipsa fuga suscipit recusandae? Ad tempore possimus fuga nemo placeat itaque. Debitis sunt iusto quisquam consequuntur odio ducimus, laborum molestias illum numquam veritatis doloribus mollitia reprehenderit sed officia tempora qui quaerat magni, quasi aperiam rem. Reiciendis possimus eligendi dolorum dolorem sunt velit atque mollitia id ducimus cupiditate in, pariatur, hic adipisci quo! Reprehenderit officiis fugiat quisquam illo, aliquid animi, debitis, quis necessitatibus quam ipsam quibusdam saepe tempora sequi deserunt. Ab provident fugiat necessitatibus ex soluta natus dicta, id vel eos nesciunt, itaque, sint iste? Dolore, earum. Quo nesciunt quasi aperiam numquam nisi? Laborum facere repellat earum quia magni aspernatur, repellendus illum beatae blanditiis praesentium voluptas harum mollitia exercitationem quidem. Voluptates deserunt quidem ipsa pariatur repudiandae vitae iusto, nihil a? Neque quaerat nesciunt vel libero illo quibusdam doloribus nostrum repellat cum, eos, facilis quam consequatur? Vel ullam non fugit et obcaecati rerum accusantium placeat voluptatem aut quisquam odio, tenetur provident blanditiis officiis eum officia. Pariatur iure quasi nam quos eius?</p>
+        <button class="bg-lime-300 p-4 px-8">Acessar produtos</button>
+    </div>
     </section>
 </body>
 </html>
-
-<!-- 
-    Estrutura escolhida: grid
-    Para esta atividade, optei por utilizar grid, pois, nesse primeiro contato, achei relativamente simples o uso e acredito que funcionou bem para essa prática.
--->
     
