@@ -11,37 +11,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-mono bg-[#080808] text-[#9C9C9C] text-lg/160%">
     <header class="header">
-        <nav class="container dividir-extremidades ajustar-tamanho-nav">
+        <nav class="container bg-[#1B1B1B] rounded-b-[6px]">
             <input type="checkbox" id="alternar_menu" class="ocultar-checkbox">
             <label for="alternar_menu" class="botao-alterar">
-            <ul class="menu lista-sem-estilo display flex espacamento-itens-lista lista2-responsividade">
+            <ul class="menu lista-sem-estilo display flex espacamento-itens-lista lista2-responsividade p-0 list-none">
                 <li class="lista2-responsividade"><img src="assets/img/ícone-menu-hamburguer.svg" alt="Ícone de menu hambúrguer (três traços)">Menu</li>
             </ul>
             </label>
-            <ul class="menu lista-sem-estilo display-flex espacamento-itens-lista lista1-responsividade">
-                <li><a href="#" class="link-sem-decoracao">Estudos de Casos</a></li>
-                <li><a href="#" class="link-sem-decoracao">Trabalhos</a></li>
-                <li><a href="#" class="link-sem-decoracao">Entre em contato</a></li>
+            <ul class="menu lista-sem-estilo display-flex espacamento-itens-lista lista1-responsividade p-0 list-none">
+                <li><a href="#" class="text-[#9C9C9C]">Estudos de Casos</a></li>
+                <li><a href="#" class="text-[#9C9C9C]">Trabalhos</a></li>
+                <li><a href="#" class="text-[#9C9C9C]">Entre em contato</a></li>
             </ul>
-            <ul class="menu display-flex lista-sem-estilo espacamento-itens-lista">
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <ul class="menu display-flex lista-sem-estilo espacamento-itens-lista p-0 list-none">
+                <li><a href="#" class="text-[#9C9C9C]"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="text-[#9C9C9C]"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#" class="text-[#9C9C9C]"><i class="fa-brands fa-twitter"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="container principal">
             <div class="perfil">
-                <h1>Maria Luísa</h1>
-                <h3>UX e Dev Front-end</h3>
+                <h1 class="text-[#FFFFFF] font-[Raleway] text-[44px]">Maria Luísa</h1>
+                <h3 class="text-[#FFFFFF] font-[Raleway] text-2xl font-[200]">UX e Dev Front-end</h3>
                 <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button>
-                    Vamos trabalhar junto <i class="fa-solid fa-chevron-right"></i>
+                <button class="shadow-[0_8px_30px_0_#62BA1B] py-[1em] px-[3em] rounded-[4px] border border-solid border-[#62BA1B] bg-[#3F8E00] text-[#FFFFFF] text-[16px] font-[700] mt-[20px] cursor-pointer">
+                    Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
             <div class="imagem">
@@ -51,13 +51,13 @@
             </div>
         </section>
         <section class="container alinhar-coluna">
-            <h5>Trabalhou em:</h5>
-            <ul class="display-flex espacamento-itens-lista lista-sem-estilo dividir-extremidades trabalhos ">
-                <li class="borda-itens-lista"><img src="assets/img/clickup.svg" alt="Logo Clickup"></li>
-                <li class="borda-itens-lista"><img src="assets/img/dropbox.svg" alt="Logo Dropbox"></li>
-                <li class="borda-itens-lista"><img src="assets/img/paychex.svg" alt="Logo Paychex"></li>
-                <li class="borda-itens-lista"><img src="assets/img/elastic.svg" alt="Logo Elastic"></li>
-                <li class="borda-itens-lista"><img src="assets/img/stripe.svg" alt="Logo Stripe"></li>
+            <h5 class="text-sm">Trabalhou em:</h5>
+            <ul class="display-flex espacamento-itens-lista lista-sem-estilo dividir-extremidades trabalhos p-0 list-none flex">
+                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/clickup.svg" alt="Logo Clickup"></li>
+                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/dropbox.svg" alt="Logo Dropbox" ></li>
+                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/paychex.svg" alt="Logo Paychex" ></li>
+                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/elastic.svg" alt="Logo Elastic" ></li>
+                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/stripe.svg" alt="Logo Stripe"></li>
             </ul>
         </section>
     </main>
