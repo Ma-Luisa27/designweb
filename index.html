@@ -15,49 +15,49 @@
 </head>
 <body class="font-mono bg-[#080808] text-[#9C9C9C] text-lg/160%">
     <header class="header">
-        <nav class="container bg-[#1B1B1B] rounded-b-[6px]">
-            <input type="checkbox" id="alternar_menu" class="ocultar-checkbox">
-            <label for="alternar_menu" class="botao-alterar">
-            <ul class="menu lista-sem-estilo display flex espacamento-itens-lista lista2-responsividade p-0 list-none">
-                <li class="lista2-responsividade"><img src="assets/img/ícone-menu-hamburguer.svg" alt="Ícone de menu hambúrguer (três traços)">Menu</li>
+        <nav class="container bg-[#1B1B1B] rounded-b-[6px] max-w-[100vw] mx-auto flex px-[24px] py-[28px] justify-between flex-row-reverse">
+            <input type="checkbox" id="alternar_menu" class="focus:bg-[#555555] hidden">
+            <label for="alternar_menu" class="flex cursor-pointer">
+            <ul class="menu p-0 list-none gap-[30px] flex">
+                <li class="flex"><img src="assets/img/ícone-menu-hamburguer.svg" alt="Ícone de menu hambúrguer (três traços)" class="mr-[3px] ml-[20px]">Menu</li>
             </ul>
             </label>
-            <ul class="menu lista-sem-estilo display-flex espacamento-itens-lista lista1-responsividade p-0 list-none">
-                <li><a href="#" class="text-[#9C9C9C]">Estudos de Casos</a></li>
-                <li><a href="#" class="text-[#9C9C9C]">Trabalhos</a></li>
-                <li><a href="#" class="text-[#9C9C9C]">Entre em contato</a></li>
+            <ul class="menu p-0 list-none gap-[30px] hidden">
+                <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]">Estudos de Casos</a></li>
+                <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]">Trabalhos</a></li>
+                <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]">Entre em contato</a></li>
             </ul>
-            <ul class="menu display-flex lista-sem-estilo espacamento-itens-lista p-0 list-none">
-                <li><a href="#" class="text-[#9C9C9C]"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#" class="text-[#9C9C9C]"><i class="fa-brands fa-behance"></i></a></li>
-                <li><a href="#" class="text-[#9C9C9C]"><i class="fa-brands fa-twitter"></i></a></li>
+            <ul class="menu p-0 list-none gap-[30px] flex">
+                <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]"><i class="fa-brands fa-twitter"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="container principal">
+    <main class="mt-[80px]">
+        <section class="container max-w-[80%] mx-auto flex flex-col-reverse">
             <div class="perfil">
-                <h1 class="text-[#FFFFFF] font-[Raleway] text-[44px]">Maria Luísa</h1>
-                <h3 class="text-[#FFFFFF] font-[Raleway] text-2xl font-[200]">UX e Dev Front-end</h3>
-                <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button class="shadow-[0_8px_30px_0_#62BA1B] py-[1em] px-[3em] rounded-[4px] border border-solid border-[#62BA1B] bg-[#3F8E00] text-[#FFFFFF] text-[16px] font-[700] mt-[20px] cursor-pointer">
+                <h1 class="text-[#FFFFFF] font-[Raleway] text-[44px] mt-[32px]">Maria Luísa</h1>
+                <h3 class="text-[#FFFFFF] font-[Raleway] text-2xl font-[200] mt-[16px]">UX e Dev Front-end</h3>
+                <p class="mt-[10px]">Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
+                <button class="shadow-[0_8px_30px_0_#62BA1B] w-[100%] mt-[30px] mb-[100px] py-[1em] px-[3em] rounded-[4px] border border-solid border-[#62BA1B] bg-[#3F8E00] text-[#FFFFFF] text-[16px] font-[700] mt-[20px] cursor-pointer focus:bg-[#62BA1B]">
                     Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
             <div class="imagem">
-                <figure>
-                    <img src="assets/img/Foto_de_perfil.png" alt="Foto da Maria Luísa">
+                <figure class="m-0">
+                    <img src="assets/img/Foto_de_perfil.png" alt="Foto da Maria Luísa" class="w-[100%]">
                 </figure>
             </div>
         </section>
-        <section class="container alinhar-coluna">
+        <section class="container max-w-[80%] mx-auto flex flex-col">
             <h5 class="text-sm">Trabalhou em:</h5>
-            <ul class="display-flex espacamento-itens-lista lista-sem-estilo dividir-extremidades trabalhos p-0 list-none flex">
-                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/clickup.svg" alt="Logo Clickup"></li>
-                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/dropbox.svg" alt="Logo Dropbox" ></li>
-                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/paychex.svg" alt="Logo Paychex" ></li>
-                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/elastic.svg" alt="Logo Elastic" ></li>
-                <li class="borda-itens-lista justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/stripe.svg" alt="Logo Stripe"></li>
+            <ul class="p-0 list-none flex gap-[30px] justify-between overflow-y-scroll snap-mandatory flex-wrap-nowrap mb-[50px]">
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/clickup.svg" alt="Logo Clickup"></li>
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/dropbox.svg" alt="Logo Dropbox" ></li>
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/paychex.svg" alt="Logo Paychex" ></li>
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/elastic.svg" alt="Logo Elastic" ></li>
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/stripe.svg" alt="Logo Stripe"></li>
             </ul>
         </section>
     </main>
