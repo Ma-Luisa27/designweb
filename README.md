@@ -17,7 +17,7 @@ Este é um guia simples para a turma colaborar no projeto usando GitHub.
 
 ### Passo 2: Clonar o Fork no Computador
 - **Clonar** significa copiar o projeto do GitHub para o seu computador, a partir da sua cópia, para trabalhar nele.
-- No terminal (programa para digitar comandos), digite: `git clone https://github.com/{seu-user}/designweb`
+- No terminal (programa para digitar comandos), digite: `git clone https://github.com/{seu-user}/designweb`.
   _Isso cria uma pasta no computador com o projeto para você mexer._
 
 ### Passo 3: Configurar o Repositório Original como Upstream
