@@ -15,14 +15,14 @@
 </head>
 <body class="font-mono bg-[#080808] text-[#9C9C9C] text-lg/160%">
     <header class="header">
-        <nav class="container bg-[#1B1B1B] rounded-b-[6px] max-w-[100vw] mx-auto flex px-[24px] py-[28px] justify-between flex-row-reverse">
+        <nav class="container bg-[#1B1B1B] rounded-b-[6px] max-w-[100vw] mx-auto flex px-[24px] py-[28px] justify-between flex-row-reverse sm:max-w-[80vw] sm:flex-row">
             <input type="checkbox" id="alternar_menu" class="focus:bg-[#555555] hidden">
-            <label for="alternar_menu" class="flex cursor-pointer">
-            <ul class="menu p-0 list-none gap-[30px] flex">
+            <label for="alternar_menu" class="flex cursor-pointer sm:hidden">
+            <ul class="menu p-0 list-none gap-[30px] flex sm:hidden">
                 <li class="flex"><img src="assets/img/ícone-menu-hamburguer.svg" alt="Ícone de menu hambúrguer (três traços)" class="mr-[3px] ml-[20px]">Menu</li>
             </ul>
             </label>
-            <ul class="menu p-0 list-none gap-[30px] hidden">
+            <ul class="menu p-0 list-none gap-[30px] hidden sm:flex">
                 <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]">Estudos de Casos</a></li>
                 <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]">Trabalhos</a></li>
                 <li><a href="#" class="text-[#9C9C9C] focus:bg-[#555555]">Entre em contato</a></li>
@@ -35,29 +35,29 @@
         </nav>
     </header>
     <main class="mt-[80px]">
-        <section class="container max-w-[80%] mx-auto flex flex-col-reverse">
+        <section class="container max-w-[80%] mx-auto flex flex-col-reverse sm:flex-row">
             <div class="perfil">
                 <h1 class="text-[#FFFFFF] font-[Raleway] text-[44px] mt-[32px]">Maria Luísa</h1>
                 <h3 class="text-[#FFFFFF] font-[Raleway] text-2xl font-[200] mt-[16px]">UX e Dev Front-end</h3>
                 <p class="mt-[10px]">Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button class="shadow-[0_8px_30px_0_#62BA1B] w-[100%] mt-[30px] mb-[100px] py-[1em] px-[3em] rounded-[4px] border border-solid border-[#62BA1B] bg-[#3F8E00] text-[#FFFFFF] text-[16px] font-[700] mt-[20px] cursor-pointer focus:bg-[#62BA1B]">
+                <button class="shadow-[0_8px_30px_0_#62BA1B] w-[100%] sm:w-auto sm: px-[64px] sm:py-[21px] mt-[30px] py-[1em] px-[3em] rounded-[4px] border border-solid border-[#62BA1B] bg-[#3F8E00] text-[#FFFFFF] text-[16px] font-[700] mt-[20px] cursor-pointer focus:bg-[#62BA1B]">
                     Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
             <div class="imagem">
-                <figure class="m-0">
+                <figure class="w-[100%]">
                     <img src="assets/img/Foto_de_perfil.png" alt="Foto da Maria Luísa" class="w-[100%]">
                 </figure>
             </div>
         </section>
-        <section class="container max-w-[80%] mx-auto flex flex-col">
+        <section class="container max-w-[80%] mx-auto flex flex-col mt-[100px]">
             <h5 class="text-sm">Trabalhou em:</h5>
-            <ul class="p-0 list-none flex gap-[30px] justify-between overflow-y-scroll snap-mandatory flex-wrap-nowrap mb-[50px]">
-                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/clickup.svg" alt="Logo Clickup"></li>
-                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/dropbox.svg" alt="Logo Dropbox" ></li>
-                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/paychex.svg" alt="Logo Paychex" ></li>
-                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/elastic.svg" alt="Logo Elastic" ></li>
-                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/stripe.svg" alt="Logo Stripe"></li>
+            <ul class="list-none flex gap-[30px] justify-between overflow-y-scroll snap-mandatory flex-nowrap mb-[50px] sm:flex-wrap sm:overflow-y-auto">
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/clickup.svg" alt="Logo Clickup" class="w-[60px]"></li>
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/dropbox.svg" alt="Logo Dropbox" class="w-[60px]"></li>
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/paychex.svg" alt="Logo Paychex" class="w-[60px]"></li>
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/elastic.svg" alt="Logo Elastic" class="w-[60px]"></li>
+                <li class="justify-center text-justify border border-solid border-[#1B1B1B] py-[20px] px-[60px] flex"><img src="assets/img/stripe.svg" alt="Logo Stripe" class="w-[60px]"></li>
             </ul>
         </section>
     </main>
