@@ -13,11 +13,11 @@
         <figure><img src="assets/img/logo.svg" alt="Logo de InfoWeb by turma InfoWebeti"></figure>
         <nav>
             <menu class="flex gap-8 text-gray-700">
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#sobre">Sobre</a></li>
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#professores">Professores</a></li>
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#alunos">Alunos</a></li>
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#projetos">Projetos</a></li>
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#documentos">Documentos</a></li>
+                <li><a class="py-2 px-4 rounded hover:bg-sky-600 hover:text-white" href="#sobre">Sobre</a></li>
+                <li><a class="py-2 px-4 rounded hover:bg-sky-600 hover:text-white" href="#professores">Professores</a></li>
+                <li><a class="py-2 px-4 rounded hover:bg-sky-600 hover:text-white" href="#alunos">Alunos</a></li>
+                <li><a class="py-2 px-4 rounded hover:bg-sky-600 hover:text-white" href="#projetos">Projetos</a></li>
+                <li><a class="bg-sky-900 text-white py-2 px-4 rounded hover:bg-sky-600" href="#documentos">Documentos</a></li>
             </menu>
         </nav>
     </header>
@@ -25,8 +25,8 @@
 
         <!-- hero -->
         <section class="flex items-center flex-col text-center p-20 bg-gray-100 rounded-lg">
-            <h1 class="text-5xl max-w-140">Depois de muita espera, ela finalmente chegou!</h1>
-            <p class="my-10 max-w-140">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
+            <h1 class="text-5xl max-w-140 font-semibold">Depois de muita espera, ela finalmente chegou!</h1>
+            <p class="my-10 max-w-140 text-gray-500">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
 
             <div class="flex gap-4 items-base-line justify-center">
             <a href="#" class="bg-sky-700 text-white py-4 px-8 rounded">Ser feliz agora</a>
@@ -48,47 +48,50 @@
         </section>
 
         <!-- destaques -->
-         <section class="flex my-20 text-gray-500 justify-between">
-            <div class="flex gap-4 items-baseline">
+         <section class="my-20 text-gray-500 grid grid-cols-3">
+            <div class="flex gap-4 items-baseline border-b-solid border-b-2 border-b-gray-300 hover:border-b-solid hover:border-b-2 hover:border-b-sky-700">
                 <i class="fa-solid fa-chevron-right text-sms"></i>
             <div>
                 <strong>Ela é bonita</strong>
-                <p>Além de linda, ela é a mais top</p>
+                <p class="mt-5 mb-10">Além de linda, ela é a mais top. Transmite o verdadeiro espírito da InfoWeb.</p>
             </div>
             </div>
-            <div class="flex gap-4 items-baseline">
+            <div class="flex gap-4 items-baseline hover:border-b-sky-700 border-b-solid border-b-2 border-b-gray-300">
                 <i class="fa-solid fa-chevron-right text-sm"></i>
             <div>
                 <strong>O azul destaque</strong>
-                <p>O azul royal ficou para trás. Contemple o novo azul esmeralda</p>
+                <p class="mt-5 mb-10">O azul royal ficou para trás. Contemple o novo azul esmeralda</p>
             </div>
             </div>
-            <div class="flex gap-4 items-baseline">
+            <div class="flex gap-4 items-baseline border-b-solid border-b-2 border-b-gray-300 hover:border-b-solid hover:border-b-2 hover:border-b-sky-700">
                 <i class="fa-solid fa-chevron-right text-sm"></i>
             <div>
                 <strong>Webeti</strong>
-                <p>O nosso mascote é um gênio da informática</p>
+                <p class="mt-5 mb-10">O nosso mascote é um gênio da informática. Junte-se a ele.</p>
             </div>
             </div>
          </section>
+
          <!-- mockup da camiseta da turma -->
-         <figure><img src="assets/img/mockup.png" class="w-full" alt="Imagem destaque da camisa"></figure>
-         <h2>Alunos que já compraram</h2>
-         <p>Junte aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
+         <figure><img src="assets/img/mockup.png" class="w-full mb-12" alt="Imagem destaque da camisa"></figure>
+        <div class="flex flex-col items-center">
+         <h2 class="text-5xl text-center mb-8 font-semibold">Alunos que já compraram</h2>
+         <p class="max-w-md text-center text-gray-500">Junte aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
+        </div>
 
          <!-- métricas -->
-         <section class="grid grid-cols-3 gap-4 text-center my-">
+         <section class="grid grid-cols-3 gap-4 text-center my-12">
             <div>
                 <h3 class="text-5xl">243+</h3>
-                <span>Alunos felizes</span>
+                <span class="text-gray-500">Alunos felizes</span>
             </div>
             <div>
                 <h3 class="text-5xl">38.903+</h3>
-                <span>Alunos adquirindo agora</span>
+                <span class="text-gray-500">Alunos adquirindo agora</span>
             </div>
             <div>
                 <h3 class="text-5xl">154+</h3>
-                <span>Alunos tristes</span>
+                <span class="text-gray-500">Alunos tristes</span>
             </div>
          </section>
     </main>
