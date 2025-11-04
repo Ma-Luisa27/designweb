@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
 </head>
 
 <body class="grid grid-rows-[auto_1fr] min-h-screen font-[Sora]">
@@ -30,24 +30,38 @@
         <h1 class="text-[#4F4F4F] text-2xl font-semibold mb-[32px]">Canal do cliente</h1>
         <ul>
             <li>
-                <input type="checkbox" id="alternar_menu" class="peer hidden">
-                
-                <i class="fa-solid fa-shop text-[#0F315C]"></i>
-                <a href="#" class="text-[#4F4F4F] text-sm font-bold">Loja de projetos</a>
-                <ul class="hidden peer-checked:block">
-                    <li>Dashboard</li>
-                    <li>Compra de créditos</li>
-                    <li>Concluídos</li>
+                <div class="collapse">
+                <input type="checkbox"/>
+                <div class="collapse-title !p-0">
+                    <img src="assets/img/loja.svg" alt="Ícone de loja" class="inline mr-[2px]">
+                    <a href="#" class="text-[#4F4F4F] text-sm font-bold">Loja de projetos</a>
+                </div>
+                <div class="collapse-content text-sm">
+                <ul class="ml-[12px]">
+                    <li class="my-[6px]"><a href="dashboard.html" class="text-[#4F4F4F] text-sm font-normal">Dashboard</a></li>
+                    <li class="my-[6px]"><a href="creditos-comprar.html" class="text-[#104F98] text-sm font-bold">Compra de créditos</a></li>
+                    <li class="my-[6px]"><a href="#" class="text-[#4F4F4F] text-sm font-normal">Concluídos</a></li>
                 </ul>
+                </div>
+                </div>
             </li>
-            </label>
             <li class="my-[32px]">
-                <i class="fa-solid fa-chart-pie text-[#0F315C]"></i>
-                <a href="#" class="text-[#4F4F4F] text-sm font-normal">Gestão de projetos</a>
+                <div class="collapse">
+                <input type="checkbox"/>
+                <div class="collapse-title !p-0">
+                    <img src="assets/img/grafico.svg" alt="Ícone de gráfico de setores" class="inline mr-[2px]">
+                    <a href="#" class="text-[#4F4F4F] text-sm font-normal">Gestão de projetos</a>
+                </div>
+                </div>
             </li>
             <li>
-                <i class="fa-solid fa-bullhorn text-[#0F315C]"></i>
-                <a href="#" class="text-[#4F4F4F] text-sm font-normal">Campanhas</a>
+                <div class="collapse">
+                <input type="checkbox"/>
+                <div class="collapse-title !p-0">
+                    <img src="assets/img/megafone.svg" alt="Ícone de megafone" class="inline mr-[2px]">
+                    <a href="#" class="text-[#4F4F4F] text-sm font-normal">Campanhas</a>
+                </div>
+                </div>
             </li>
         </ul>
     </nav>
@@ -60,7 +74,7 @@
                 <li class="text-[#3D4551] font-normal text-sm">></li>
                 <li><a href="#" class="text-nowrap underline text-[#3D4551] font-normal text-sm">Comprar Créditos</a></li>
                 <li class="text-[#3D4551] font-normal text-sm">></li>
-                <li><span class="text-nowrap text-[#3D4551] font-normal text-sm">Compra de créditos</span></li>
+                <li><a href="#" class="text-nowrap text-[#3D4551] font-normal text-sm">Compra de créditos</a></li>
             </ul>
             <h1 class="text-2xl font-semibold text-[#000] my-[16px]">Compra de pontos base</h1>
             <hr class="text-[#D9D9D9]">
@@ -81,7 +95,7 @@
                     </div>
                     <div class="right grid grid-rows-2 justify-self-end">
                         <span class="text-xs font-normal text-[#8D9297]">Seu limite mensal</span>
-                        <strong class="text-xs font-bold text-[#000]">2.000 créditos</strong>
+                        <strong class="text-xs font-bold text-[#000] justify-self-end">2.000 créditos</strong>
                     </div>
                 </div>
             </div>
@@ -115,16 +129,35 @@
             </div>
             <section>
                 <div class="collapse">
-                    <input type="checkbox" />
-                    <div class="collapse-title text-lg font-semibold text-[#000] mt-[80px]">Mais informações sobre o produto</div>
-                    <div class="collapse-content text-sm">
-                        A quantidade mínima para compra é de 1.00.000 pontos. Sua conta tem limite de 200.000.000 pontos para compra. Para quem tem Clube Esfera, o limite é de cinco pedidos por mês e a quantidade varia conforme tabela abaixo. 
-Os pontos serão creditados em até 24 horas após a transação. 
-Os pontos têm validade de 24 meses a contar a partir da data da compra. 
-A compra é de múltiplos de 1.000 pontos. 
-O pagamento deve ser feito por cartão de crédito. 
-A Esfera se reserva o direito de modificar, suspender ou cancelar este produto, bem como alterar o valor dos pontos.  
+                    <input type="checkbox"/>
+                    <div class="collapse-title text-lg font-semibold text-[#000] mt-[80px] !p-0">Mais informações sobre o produto<i class="fa-solid fa-chevron-down text-[#104F98] ml-[6px]"></i></div>
+                    <div class="collapse-content text-sm !p-0">
+                    <div>
+                    <div class="grid grid-cols-[auto_1fr] gap-[4px] mt-[12px]">
+                    <p class="inline text-[#808080] text-xs font-normal">1.</p>
+                    <p class="inline text-[#808080] text-xs font-normal">A quantidade mínima para compra é de 1.00.000 pontos. Sua conta tem limite de 200.000.000 pontos para compra. Para quem tem Clube Esfera, o limite é de cinco pedidos por mês e a quantidade varia conforme tabela abaixo.</p>
                     </div>
+                    <div class="grid grid-cols-[auto_1fr] gap-[4px] mt-[12px]">
+                    <p class="inline text-[#808080] text-xs font-normal">2.</p>
+                    <p class="inline text-[#808080] text-xs font-normal">Os pontos serão creditados em até 24 horas após a transação.</p>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] gap-[4px] mt-[12px]">
+                    <p class="inline text-[#808080] text-xs font-normal">3.</p>
+                    <p class="inline text-[#808080] text-xs font-normal">Os pontos têm validade de 24 meses a contar a partir da data da compra.</p>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] gap-[4px] mt-[12px]">
+                    <p class="inline text-[#808080] text-xs font-normal">4.</p>
+                    <p class="inline text-[#808080] text-xs font-normal">A compra é de múltiplos de 1.000 pontos.</p>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] gap-[4px] mt-[12px]">
+                    <p class="inline text-[#808080] text-xs font-normal">5.</p>
+                    <p class="inline text-[#808080] text-xs font-normal">O pagamento deve ser feito por cartão de crédito.</p>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] gap-[4px] mt-[12px] mb-[24px]">
+                    <p class="inline text-[#808080] text-xs font-normal">6.</p>
+                    <p class="inline text-[#808080] text-xs font-normal">A Esfera se reserva o direito de modificar, suspender ou cancelar este produto, bem como alterar o valor dos pontos.</p>
+                    </div>
+                </div>
                 </div>
                 <hr class="my-[10px] text-[#D9D9D9]">
                 <p class="text-sm text-[#4D4D4D] max-w-3xl">

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
 </head>
 
 <body class="grid grid-rows-[auto_1fr] min-h-screen font-[Sora]">
@@ -26,11 +27,42 @@
 
     <div class="grid grid-cols-[auto_1fr]">
     <nav class="px-[32px] pt-[32px] border-r border-solid border-[#CCC]">
-        <h1 class="text-[#4F4F4F] text-2xl font-semibold">Canal do cliente</h1>
+        <h1 class="text-[#4F4F4F] text-2xl font-semibold mb-[32px]">Canal do cliente</h1>
         <ul>
-            <li class="text-[#4F4F4F] text-sm font-bold cursor-pointer"><i class="fa-solid fa-shop text-[#0F315C]"></i>Loja de projetos</li>
-            <li class="text-[#4F4F4F] text-sm font-normal cursor-pointer"><i class="fa-solid fa-chart-pie text-[#0F315C]"></i>Gestão de projetos</li>
-            <li class="text-[#4F4F4F] text-sm font-normal cursor-pointer"><i class="fa-solid fa-bullhorn text-[#0F315C]"></i>Campanhas</li>
+            <li>
+                <div class="collapse">
+                <input type="checkbox"/>
+                <div class="collapse-title !p-0">
+                    <img src="assets/img/loja.svg" alt="Ícone de loja" class="inline mr-[2px]">
+                    <a href="#" class="text-[#4F4F4F] text-sm font-bold">Loja de projetos</a>
+                </div>
+                <div class="collapse-content text-sm">
+                <ul class="ml-[12px]">
+                    <li class="my-[6px]"><a href="dashboard.html" class="text-[#104F98] text-sm font-bold">Dashboard</a></li>
+                    <li class="my-[6px]"><a href="creditos-comprar.html" class="text-[#4F4F4F] text-sm font-normal">Compra de créditos</a></li>
+                    <li class="my-[6px]"><a href="#" class="text-[#4F4F4F] text-sm font-normal">Concluídos</a></li>
+                </ul>
+                </div>
+                </div>
+            </li>
+            <li class="my-[32px]">
+                <div class="collapse">
+                <input type="checkbox"/>
+                <div class="collapse-title !p-0">
+                    <img src="assets/img/grafico.svg" alt="Ícone de gráfico de setores" class="inline mr-[2px]">
+                    <a href="#" class="text-[#4F4F4F] text-sm font-normal">Gestão de projetos</a>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="collapse">
+                <input type="checkbox"/>
+                <div class="collapse-title !p-0">
+                    <img src="assets/img/megafone.svg" alt="Ícone de megafone" class="inline mr-[2px]">
+                    <a href="#" class="text-[#4F4F4F] text-sm font-normal">Campanhas</a>
+                </div>
+                </div>
+            </li>
         </ul>
     </nav>
 
@@ -46,7 +78,7 @@
             <p class="text-[#808080] text-sm font-normal mb-[16px]">Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.</p>
             <div class="grid grid-cols-2 items-baseline">
                 <div>
-                <h3 class="font-bold text-base text-[#000]">Comprar créditos</h3>
+                <h3 class="font-bold text-base text-[#000] text-nowrap">Comprar créditos</h3>
                 </div>
             <i class="fa-solid fa-chevron-right justify-self-end"></i>
             </div>
@@ -57,7 +89,7 @@
             <p class="text-[#808080] text-sm font-normal mb-[16px]">Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto.</p>
             <div class="grid grid-cols-2 items-baseline">
                 <div>
-                <h3 class="font-bold text-base text-[#000]">Comprar créditos</h3>
+                <h3 class="font-bold text-base text-[#000] text-nowrap">Comprar créditos</h3>
                 </div>
             <i class="fa-solid fa-chevron-right justify-self-end"></i>
             </div>
@@ -68,7 +100,7 @@
             <p class="text-[#808080] text-sm font-normal mb-[16px]">Descontos cumulativos para projetos em Wordpress para 2025.</p>
             <div class="grid grid-cols-2 items-baseline">
                 <div>
-                <h3 class="font-bold text-base text-[#000]">Comprar créditos</h3>
+                <h3 class="font-bold text-base text-[#000] text-nowrap">Comprar créditos</h3>
                 </div>
             <i class="fa-solid fa-chevron-right justify-self-end"></i>
             </div>
