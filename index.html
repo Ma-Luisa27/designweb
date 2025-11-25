@@ -11,9 +11,14 @@
 <body>
     
     <header class="container max-w-7xl mx-auto flex justify-between py-8 items-center">
-        <figure><img src="assets/img/logo.svg" alt="Logo de InfoWeb by turma InfoWebeti"></figure>
+        <figure class="max-md:ml-[33px]"><img src="assets/img/logo.svg" alt="Logo de InfoWeb by turma InfoWebeti"></figure>
         <nav>
-            <menu class="navbar gap-4 text-gray-700">
+            <menu class="navbar hidden max-md:block max-md:ml-[33px]">
+                <button class="btn bg-transparent border-0">
+                    <img src="assets/img/menu.svg" alt="Ícone de menu">
+                </button>
+            </menu>
+            <menu class="navbar gap-4 text-gray-700 max-md:hidden">
                 <li><a class="btn border-none bg-transparent text-base font-normal hover:bg-sky-600 hover:text-white" href="#sobre">Sobre</a></li>
                 <li><a class="btn border-none bg-transparent text-base font-normal hover:bg-sky-600 hover:text-white" href="#professores">Professores</a></li>
                 <li><a class="btn border-none bg-transparent text-base font-normal hover:bg-sky-600 hover:text-white" href="#alunos">Alunos</a></li>
@@ -25,7 +30,7 @@
     <main class="container max-w-7xl mx-auto">
 
         <!-- hero -->
-        <section class="hero p-20 bg-gray-100 rounded-[16px]">
+        <section class="hero p-20 bg-gray-100 rounded-[16px] max-md:rounded-[0px]">
             <div class="hero-content text-center">
                 <div class="max-w-lg">
                 <h1 class="text-5xl max-w-140 font-semibold">Depois de muita espera, ela finalmente chegou!</h1>
@@ -90,23 +95,23 @@
 
          <!-- mockup da camiseta da turma -->
          <figure><img src="assets/img/mockup.png" class="w-full mb-12" alt="Imagem destaque da camisa"></figure>
-        <div class="flex flex-col items-center">
-         <h2 class="text-5xl text-center mb-8 font-semibold">Alunos que já compraram</h2>
-         <p class="max-w-md text-center text-gray-500">Junte aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
+        <div class="flex flex-col items-center max-w-[90vw] mx-auto">
+         <h2 class="text-5xl text-center mb-8 font-semibold max-md:text-[32px]">Alunos que já compraram</h2>
+         <p class="max-w-md text-center text-gray-500 max-md:text-xl">Junte aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
         </div>
 
          <!-- métricas -->
-         <section class="grid grid-cols-3 gap-4 text-center my-12">
+         <section class="grid grid-rows-3 gap-7 text-center my-12">
             <div>
-                <h3 class="text-5xl">243+</h3>
+                <h3 class="text-5xl mb-[20px]">243+</h3>
                 <span class="text-gray-500">Alunos felizes</span>
             </div>
             <div>
-                <h3 class="text-5xl">38.903+</h3>
+                <h3 class="text-5xl mb-[20px]">38.903+</h3>
                 <span class="text-gray-500">Alunos adquirindo agora</span>
             </div>
             <div>
-                <h3 class="text-5xl">154+</h3>
+                <h3 class="text-5xl mb-[20px]">154+</h3>
                 <span class="text-gray-500">Alunos tristes</span>
             </div>
          </section>
