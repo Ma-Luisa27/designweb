@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landingpage - Version 1.0</title>
+    <title>Landingpage - Version 2.0</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -13,11 +13,22 @@
     <header class="container max-w-7xl mx-auto flex justify-between py-8 items-center">
         <figure class="max-md:ml-[33px]"><img src="assets/img/logo.svg" alt="Logo de InfoWeb by turma InfoWebeti"></figure>
         <nav>
-            <menu class="navbar hidden max-md:block max-md:ml-[33px]">
-                <button class="btn bg-transparent border-0">
-                    <img src="assets/img/menu.svg" alt="Ícone de menu">
-                </button>
-            </menu>
+            <div class="navbar-start md:hidden">
+            <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <img src="assets/img/menu.svg" alt="Ícone de Menu" class="max-md:mr-[33px]">
+            </div>
+            <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 ml-[-100px] w-32 p-2 shadow">
+                <li><a>Sobre</a></li>
+                <li><a>Professores</a></li>
+                <li><a>Alunos</a></li>
+                <li><a>Projetos</a></li>
+                <li><a>Documentos</a></li>
+            </ul>
+            </div>
+        </div>
             <menu class="navbar gap-4 text-gray-700 max-md:hidden">
                 <li><a class="btn border-none bg-transparent text-base font-normal hover:bg-sky-600 hover:text-white" href="#sobre">Sobre</a></li>
                 <li><a class="btn border-none bg-transparent text-base font-normal hover:bg-sky-600 hover:text-white" href="#professores">Professores</a></li>
@@ -27,14 +38,14 @@
             </menu>
         </nav>
     </header>
-    <main class="container max-w-7xl mx-auto">
+    <main class="container max-w-[7xl] max-md:max-w-[100vw] mx-auto">
 
         <!-- hero -->
-        <section class="hero p-20 bg-gray-100 rounded-[16px] max-md:rounded-[0px]">
+        <section class="hero p-20 bg-gray-100 rounded-[16px] max-md:rounded-[0px] max-w-[100%]">
             <div class="hero-content text-center">
                 <div class="max-w-lg">
-                <h1 class="text-5xl max-w-140 font-semibold">Depois de muita espera, ela finalmente chegou!</h1>
-                <p class="my-10 max-w-140 text-gray-500">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
+                <h1 class="text-5xl font-semibold">Depois de muita espera, ela finalmente chegou!</h1>
+                <p class="my-10 text-gray-500">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
 
                 <div class="flex gap-4 items-base-line justify-center">
                 <a href="#" class="btn p-6">Ser feliz agora</a>
@@ -45,56 +56,81 @@
         </section>
 
         <!-- logos -->
-        <section>
-            <ul class="flex justify-between mt-20">
-                <li><img src="assets/img/logo1.jpg" alt="Ícone Nasa"></li>
-                <li><img src="assets/img/logo2.jpg" alt="Ícone Spotify"></li>
-                <li><img src="assets/img/logo3.jpg" alt="Ícone Google"></li>
-                <li><img src="assets/img/logo4.jpg" alt="Ícone Facebook"></li>
-                <li><img src="assets/img/logo5.jpg" alt="Ícone Instagram"></li>
-                <li><img src="assets/img/logo6.jpg" alt="Ícone Microsoft"></li>
-                <li><img src="assets/img/logo7.jpg" alt="Ícone Dropbox"></li>
-            </ul>
+        <section class="mt-20">
+            <div class="carousel rounded-box max-md:gap-[40px] md:flex md:justify-between max-md:ml-[24px]">
+  <div class="carousel-item">
+    <img
+      src="assets/img/logo1.jpg" alt="Ícone Nasa" class="h-[20px]">
+  </div>
+  <div class="carousel-item">
+    <img
+      src="assets/img/logo2.jpg" alt="Ícone Spotify" class="h-[20px]">
+  </div>
+  <div class="carousel-item">
+    <img
+      src="assets/img/logo3.jpg" alt="Ícone Google" class="h-[20px]">
+  </div>
+  <div class="carousel-item">
+    <img
+      src="assets/img/logo4.jpg" alt="Ícone Facebook" class="h-[20px]">
+  </div>
+  <div class="carousel-item">
+    <img
+      src="assets/img/logo5.jpg" alt="Ícone Instagram" class="h-[20px]">
+  </div>
+  <div class="carousel-item">
+    <img
+      src="assets/img/logo6.jpg" alt="Ícone Microsoft" class="h-[20px]">
+  </div>
+  <div class="carousel-item">
+    <img
+      src="assets/img/logo7.jpg" alt="Ícone Dropbox" class="h-[20px]">
+  </div>
+  </div>
+            <!-- <div class="flex max-md:carousel max-md:rounded-box max-md:gap-[20px]">
+                <div class="max-md:carousel-item"><img src="assets/img/logo1.jpg" alt="Ícone Nasa"></div>
+                <div class="max-md:carousel-item"><img src="assets/img/logo2.jpg" alt="Ícone Spotify"></div>
+                <div class="max-md:carousel-item"><img src="assets/img/logo3.jpg" alt="Ícone Google"></div>
+                <div class="max-md:carousel-item"><img src="assets/img/logo4.jpg" alt="Ícone Facebook"></div>
+                <div class="max-md:carousel-item"><img src="assets/img/logo5.jpg" alt="Ícone Instagram"></div>
+                <div class="max-md:carousel-item"><img src="assets/img/logo6.jpg" alt="Ícone Microsoft"></div>
+                <div class="max-md:carousel-item"><img src="assets/img/logo7.jpg" alt="Ícone Dropbox"></div>
+            </div> -->
         </section>
 
         <!-- destaques -->
-         <section class="my-20 text-gray-500 grid grid-cols-3">
-            <div class="collapse rounded-[0px] gap-4 items-baseline border-b-solid border-b-2 border-b-gray-300 hover:border-b-solid hover:border-b-2 hover:border-b-sky-700">
-                <input type="checkbox" />
-                <div class="collapse-title">
+         <section class="my-20 text-gray-500 md:grid md:grid-cols-3">
+            <details class="collapse rounded-[0px] gap-4 items-baseline hover:border-b-sky-700 border-b-solid border-b-2 border-b-gray-300 max-md:border-0" name="my-accordion-det-1" open>
+            <summary class="collapse-title">
                 <i class="fa-solid fa-chevron-right text-sm"></i>
                 <strong>Ela é bonita</strong>
-                </div>
-                <div class="collapse-content">
+            </summary>
+            <div class="collapse-content">
                 <p class="mt-5 mb-10">Além de linda, ela é a mais top. Transmite o verdadeiro espírito da InfoWeb.</p>
-                </div>
             </div>
-            <div class="collapse rounded-[0px] gap-4 items-baseline hover:border-b-sky-700 border-b-solid border-b-2 border-b-gray-300">
-                <input type="checkbox" />
-                <div class="collapse-title">
+            </details>
+            <details class="collapse rounded-[0px] gap-4 items-baseline hover:border-b-sky-700 border-b-solid border-b-2 border-b-gray-300 max-md:border-0" name="my-accordion-det-1">
+            <summary class="collapse-title">
                 <i class="fa-solid fa-chevron-right text-sm"></i>
                 <strong>O azul destaque</strong>
-                </div>
-                <div class="collapse-content">
+            </summary>
+            <div class="collapse-content">
                 <p class="mt-5 mb-10">O azul royal ficou para trás. Contemple o novo azul esmeralda</p>
-                </div>
             </div>
-            </div>
-            <div class="collapse rounded-[0px] gap-4 items-baseline border-b-solid border-b-2 border-b-gray-300 hover:border-b-solid hover:border-b-2 hover:border-b-sky-700">
-                <input type="checkbox" />
-                <div class="collapse-title">
+            </details>
+            <details class="collapse rounded-[0px] gap-4 items-baseline hover:border-b-sky-700 border-b-solid border-b-2 border-b-gray-300 max-md:border-0" name="my-accordion-det-1">
+            <summary class="collapse-title">
                 <i class="fa-solid fa-chevron-right text-sm"></i>
                 <strong>Webeti</strong>
-                </div>
-                <div class="collapse-content">
-                <p class="mt-5 mb-10">O nosso mascote é um gênio da informática. Junte-se a ele.</p>
-                </div>
+            </summary>
+            <div class="collapse-content">
+            <p class="mt-5 mb-10">O nosso mascote é um gênio da informática. Junte-se a ele.</p>
             </div>
-            </div>
+            </details>
          </section>
 
          <!-- mockup da camiseta da turma -->
-         <figure><img src="assets/img/mockup.png" class="w-full mb-12" alt="Imagem destaque da camisa"></figure>
+         <figure><img src="assets/img/mockup.png" class="w-full mb-12 max-md:hidden" alt="Imagem destaque da camisa"><img src="assets/img/imagem_camisetas_2.png" class="w-full mb-12 hidden max-md:block" alt="Imagem destaque da camisa"></figure>
         <div class="flex flex-col items-center max-w-[90vw] mx-auto">
          <h2 class="text-5xl text-center mb-8 font-semibold max-md:text-[32px]">Alunos que já compraram</h2>
          <p class="max-w-md text-center text-gray-500 max-md:text-xl">Junte aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
