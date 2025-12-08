@@ -9,12 +9,12 @@
 </head>
 <body>
     <!-- 1. O CÉREBRO (Estado Inicial) -->
-<div x-data="{ texto: '' }">
+<div x-data="{ texto: '' }" class="max-w-lg mx-auto bg-white p-6 rounded shadow">
 
   <!-- 2. A CONEXÃO (Input <-> Var) -->
-  <textarea x-model="texto"></textarea>
+  <textarea x-model="texto" placeholder="O que está acontecendo?" class="bg-gray-50 w-full border border-solid border-gray-200 mb-[10px] mx-auto p-6 rounded"></textarea>
 
-  <div>
+  <div class="grid grid-cols-2">
     <!-- 3. O FEEDBACK (Texto e Cor) -->
     <span 
       x-text="texto.length + '/20'"
@@ -22,13 +22,14 @@
               ? 'text-red-600' 
               : 'text-gray-400'">
     </span>
-
+    <div class="justify-self-end">
     <!-- 4. O GUARDA (Bloqueio) -->
     <button 
       :disabled="texto.length === 0 || 
-                 texto.length > 20">
+                 texto.length > 20" class="mx-auto px-6 py-2 rounded-full bg-blue-500 text-white font-bold">
       Tweetar
     </button>
+    </div>
   </div>
 
 </div>
