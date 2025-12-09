@@ -7,20 +7,19 @@
       :data-theme="dark ? 'dracula' : 'winter'">
 
 <head>
-    <title></title>
+    <title>Smart Portfólio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-    <!-- Imports Tailwind + DaisyUI + Alpine -->
 </head>
 
 <body class="min-h-screen transition-colors">
+  <header>
     <nav class="navbar bg-base-100 shadow-lg px-8">
         <div class="flex-1 font-bold text-xl">DevPortfolio</div>
         
         <div class="flex-none gap-2">
-          <!-- Botão HOME -->
           <button 
             @click="tab = 'home'" 
             class="btn btn-sm btn-ghost"
@@ -28,7 +27,6 @@
             Home
           </button>
       
-          <!-- Botão PROJETOS -->
           <button 
             @click="tab = 'projetos'" 
             class="btn btn-sm btn-ghost"
@@ -36,7 +34,6 @@
             Projetos
           </button>
 
-          <!-- Botão SOBRE -->
           <button 
             @click="tab = 'sobre'" 
             class="btn btn-sm btn-ghost"
@@ -44,7 +41,6 @@
             Sobre
           </button>
 
-          <!-- Botão CONTATO -->
           <button 
             @click="tab = 'contato'" 
             class="btn btn-sm btn-ghost"
@@ -52,12 +48,12 @@
             Contato
           </button>
           
-          <!-- Dark Mode Toggle -->
           <input type="checkbox" class="toggle" 
                  x-model="dark" />
         </div>
       </nav>
-    <!-- SEÇÃO HOME -->
+    </header>
+    <main>
     <div x-show="tab === 'home'" x-transition:enter.duration.500ms>
         <div class="hero min-h-[50vh] bg-base-200 rounded-box">
             <div class="hero-content text-center">
@@ -71,14 +67,12 @@
         </div>
     </div>
 
-    <!-- SEÇÃO PROJETOS -->
     <div class="grid grid-cols-2 mt-[50px] gap-4 mx-[8px]" x-show="tab === 'projetos'" x-transition:enter.duration.500ms>
     <div class="card bg-base-100 shadow-xl" x-data="{ modal: false }">
         <div class="card-body">
           <h2 class="card-title">Projeto X</h2>
           <button @click="modal = true" class="btn btn-primary">Ver</button>
         </div>
-        <!-- O MODAL -->
         <div x-show="modal" 
              class="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
              x-transition.opacity>
@@ -96,7 +90,6 @@
           <h2 class="card-title">Projeto Y</h2>
           <button @click="modal = true" class="btn btn-primary">Ver</button>
         </div>
-        <!-- O MODAL -->
         <div x-show="modal" 
              class="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
              x-transition.opacity>
@@ -110,7 +103,6 @@
       </div>
     </div>
 
-    <!-- SEÇÃO SOBRE -->
     <div x-show="tab === 'sobre'" x-transition:enter.duration.500ms x-data="{ ativo: 1}" class="mt-[50px] mx-[8px]">
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="acc"  checked />
@@ -134,22 +126,22 @@
         </div>
     </div>
 
-    <!-- SEÇÃO CONTATO -->
-    <div x-show="tab === 'contato'" x-data="{enviado: false, email: '', msg: ''}" x-transition:enter.duration.500ms>
+    <div x-show="tab === 'contato'" x-data="{enviado: false, email: '', msg: ''}" x-transition:enter.duration.500ms class="mt-[50px] mx-[8px]">
         <div class="form-control">
             <label for="label">Email</label>
-            <textarea x-model="email" class="input input-bordered"></textarea>
+            <textarea x-model="email" class="input input-bordered bg-base-200 mb-[20px]"></textarea>
         </div>
         <div class="form-control">
             <label for="label">Mensagem</label>
-            <textarea x-model="msg" class="input input-bordered"></textarea>
+            <textarea x-model="msg" class="input input-bordered bg-base-200 mb-[20px]"></textarea>
         </div>
         <div>
-            <button @click="enviado = true, email='', msg=''" :disabled="!email.includes('@') || msg.length < 5" class="btn btn-primary">Enviar</button>
+            <button @click="enviado = true, email='', msg=''" :disabled="!email.includes('@') || msg.length < 2" class="btn btn-primary mb-[20px]">Enviar</button>
         </div>
-        <div x-show="enviado" x-transition:enter.duration.500ms>
+        <div x-show="enviado" x-transition:enter.duration.500ms class="alert alert-success shadow-md">
             <p>Enviado com sucesso!</p>
         </div>
     </div>
+    </main>
 </body>
 </html>
