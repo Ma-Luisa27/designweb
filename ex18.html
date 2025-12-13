@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <h4 class="m-2 text-xl">Sobre nossa empresa</h4>
+    <div x-data="{ aberto: false }" class="ml-2">
+        <p x-text="aberto ? 'Nossa empresa AnimalLove já tem 12 anos de atuação no mercado, sendo referência entre o setor de animais de estimação no país, contanto com uma grande variedade de produto e serviços. Contamos com uma grande quantidade de funcionários extremamente capacitados para cuidar do seu bichinho, buscando oferecer o que temos de melhor para a saúde e bem-estar do seu pet e, ainda, com preços acessíveis. Atendemos cachorros, gatos, pássaros, peixes e animais silvestres, como coelhos, porquinhos da índia, hamsters e chinchilas. Temos várias lojas espalhadas pelos Brasil, com produtos para higiene, brinquedos, alimentos e outros acessórios. Contamos também com uma clínica para atender seu animal com todo o carinho e o setor de farmácia veterinário. Por fim, também temos pet shops para cuidar da higiene, com banho, tosa e escovação. E, recentemente, estamos também com atendimento pelo nosso site para facilitar o acesso. Esperamos ter receber em uma de nossa lojas.' : 'Nossa empresa AnimalLove já tem 12 anos de atuação no mercado, sendo referência entre o setor de animais de estimação no país, contanto com uma grande variedade de produto e serviços. Contamos com uma grande quantidade de funcionários extremamente capacitados para cuidar do seu bichinho, buscando oferecer o que temos de melhor para a saúde e bem-estar do seu pet e, ainda, com preços acessíveis.'"></p>
+        <button @click="aberto = !aberto" x-text="aberto ? 'Ler menos' : 'Ler mais'" class="p-2 mt-2 bg-gray-200 rounded"></button>
+    </div>
+</body>
+</html>
