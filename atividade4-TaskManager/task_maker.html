@@ -8,25 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="task_maker.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body x-data>
-    <div>
-    <h3>Minhas tarefas</h3>
-    <span></span>
+<body x-data class="m-5">
+    <div class="flex justify-between items-end">
+    <h3 class="text-2xl font-bold text-gray-800">Minhas tarefas</h3>
+    <span x-text="$store.tasks.items.filter(item => !item.done).length + ' Pendentes'" class="px-3 py-1 font-bold rounded rounded-full bg-blue-100 text-blue-700"></span>
     </div>
-    <div>
-        <input type="text" placeholder="Nova tarefa..." x-model="$store.tasks.novoItem" @keyup.enter="$store.tasks.add()">
+    <div class="flex gap-2 mt-5">
+        <input type="text" placeholder="Nova tarefa..." x-model="$store.tasks.novoItem" @keyup.enter="$store.tasks.add()" class="w-full p-3 border rounded-lg bg-gray outline-blue-500">
         <button @click="$store.tasks.add()" class="p-5 bg-blue-500"></button>
     </div>
-    <div>
-        <button @click="$store.tasks.filter = 'all'">Todas</button>
-        <button>Pendentes</button>
-        <button>Feitas</button>
+    <div class="mt-5">
+        <button @click="$store.tasks.filter = 'all'" :class="$store.tasks.filter === 'all' ? 'text-white bg-gray-800' : 'text-gray-500 bg-gray-100'" class="py-1 px-3 font-bold rounded rounded-full">Todas</button>
+        <button @click="$store.tasks.filter = 'todo'" :class="$store.tasks.filter === 'todo' ? 'text-white bg-gray-800' : 'text-gray-500 bg-gray-100'" class="py-1 px-3 font-bold rounded rounded-full">Pendentes</button>
+        <button @click="$store.tasks.filter = 'done'" :class="$store.tasks.filter === 'done' ? 'text-white bg-gray-800' : 'text-gray-500 bg-gray-100'" class="py-1 px-3 font-bold rounded rounded-full">Feitas</button>
     </div>
     <ul>
-        <template x-for="task in $store.tasks.list" :key="task.text">
-        <li>
-            <span x-text="task.text"></span>
+        <template x-for="item in $store.tasks.list">
+        <li @click="item.done = true" class="cursor-pointer flex">
+            <div :class="item.done === true ? 'bg-green-500' : 'bg-white'" class="rounded border w-6 h-6 flex justify-center items-center">
+                <i class="fa-solid fa-check text-white text-xs"></i>
+            </div>
+            <span x-text="item.text" :class="item.done === true ? 'line-through' : 'no-underline'"></span>
         </li>
         </template>
     </ul>

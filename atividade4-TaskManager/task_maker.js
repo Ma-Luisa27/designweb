@@ -6,7 +6,9 @@ Alpine.store('tasks', {
     
     get list() {
         if (this.filter === 'done') 
-            return this.items.filter(i => i.done);
+            return this.items.filter(item => item.done);
+        if (this.filter === 'todo')
+            return this.items.filter(item => !item.done);
         return this.items;
     },
 
