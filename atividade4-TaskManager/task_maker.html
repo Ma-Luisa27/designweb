@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="task_maker.js"></script>
+</head>
+<body x-data>
+    <div>
+    <h3>Minhas tarefas</h3>
+    <span></span>
+    </div>
+    <div>
+        <input type="text" placeholder="Nova tarefa..." x-model="$store.tasks.novoItem" @keyup.enter="$store.tasks.add()">
+        <button @click="$store.tasks.add()" class="p-5 bg-blue-500"></button>
+    </div>
+    <div>
+        <button @click="$store.tasks.filter = 'all'">Todas</button>
+        <button>Pendentes</button>
+        <button>Feitas</button>
+    </div>
+    <ul>
+        <template x-for="task in $store.tasks.list" :key="task.text">
+        <li>
+            <span x-text="task.text"></span>
+        </li>
+        </template>
+    </ul>
+</body>
+</html>
