@@ -25,8 +25,8 @@
         <button @click="$store.tasks.filter = 'done'" :class="$store.tasks.filter === 'done' ? 'text-white bg-gray-800' : 'text-gray-500 bg-gray-100'" class="py-1 px-3 font-bold rounded rounded-full">Feitas</button>
     </div>
     <ul>
-        <template x-for="item in $store.tasks.list">
-        <li @click="item.done = !item.done" class="group cursor-pointer flex rounded border p-3 mb-2 justify-between items-center">
+        <template x-for="item in $store.tasks.list" :key="item.id">
+        <li @click="item.done = !item.done" class="group cursor-pointer flex rounded border hover:border-gray-300 p-3 mb-2 justify-between items-center">
             <div class="flex">
             <div :class="item.done === true ? 'bg-green-500' : 'bg-white'" class="rounded border w-6 h-6 flex justify-center items-center mr-3">
                 <i class="fa-solid fa-check text-white text-xs"></i>

@@ -14,7 +14,7 @@ Alpine.store('tasks', {
 
     add() {
         if (!this.novoItem) return
-        this.items.push({text: this.novoItem, done: false});
+        this.items.push({id: Date.now(), text: this.novoItem, done: false});
         this.novoItem = '';
     },
 
