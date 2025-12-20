@@ -18,5 +18,9 @@ Alpine.store('tasks', {
         this.novoItem = '';
     },
 
+    remove(item_removido) {
+        this.items = this.items.filter(item => item !== item_removido)
+    }
+
 })
 })

@@ -17,20 +17,23 @@
     </div>
     <div class="flex gap-2 mt-5">
         <input type="text" placeholder="Nova tarefa..." x-model="$store.tasks.novoItem" @keyup.enter="$store.tasks.add()" class="w-full p-3 border rounded-lg bg-gray outline-blue-500">
-        <button @click="$store.tasks.add()" class="p-5 bg-blue-500"></button>
+        <button @click="$store.tasks.add()" class="p-2 bg-blue-500 rounded"><i class="fa-solid fa-check text-white"></i></button>
     </div>
-    <div class="mt-5">
+    <div class="mt-5 mb-3">
         <button @click="$store.tasks.filter = 'all'" :class="$store.tasks.filter === 'all' ? 'text-white bg-gray-800' : 'text-gray-500 bg-gray-100'" class="py-1 px-3 font-bold rounded rounded-full">Todas</button>
         <button @click="$store.tasks.filter = 'todo'" :class="$store.tasks.filter === 'todo' ? 'text-white bg-gray-800' : 'text-gray-500 bg-gray-100'" class="py-1 px-3 font-bold rounded rounded-full">Pendentes</button>
         <button @click="$store.tasks.filter = 'done'" :class="$store.tasks.filter === 'done' ? 'text-white bg-gray-800' : 'text-gray-500 bg-gray-100'" class="py-1 px-3 font-bold rounded rounded-full">Feitas</button>
     </div>
     <ul>
         <template x-for="item in $store.tasks.list">
-        <li @click="item.done = true" class="cursor-pointer flex">
-            <div :class="item.done === true ? 'bg-green-500' : 'bg-white'" class="rounded border w-6 h-6 flex justify-center items-center">
+        <li @click="item.done = !item.done" class="group cursor-pointer flex rounded border p-3 mb-2 justify-between items-center">
+            <div class="flex">
+            <div :class="item.done === true ? 'bg-green-500' : 'bg-white'" class="rounded border w-6 h-6 flex justify-center items-center mr-3">
                 <i class="fa-solid fa-check text-white text-xs"></i>
             </div>
-            <span x-text="item.text" :class="item.done === true ? 'line-through' : 'no-underline'"></span>
+            <span x-text="item.text" :class="item.done === true ? 'line-through text-gray-400' : 'no-underline'"></span>
+            </div>
+            <button class="hidden group-hover:block" @click.stop="$store.tasks.remove(item)"><i class="fa-regular fa-trash-can text-gray-300 hover:text-red-500"></i></button>
         </li>
         </template>
     </ul>
