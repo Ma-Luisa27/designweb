@@ -9,27 +9,30 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body x-data="{servicos: [], novoServico: '', novoValor: 0, get total() {let count = 0; this.servicos.forEach(item => count += item.valor); return count;}}">
-    <div>
-        <div></div>
-        <h5>Orçamento #001</h5>
+<body>
+    <div x-data="{servicos: [], novoServico: '', novoValor: 0, get total() {let count = 0; this.servicos.forEach(item => count += item.valor); return count;}}" class="max-w-sm mx-auto p-5 border rounded mt-5">
+    <div class="mb-5 flex items-center gap-3">
+        <div class="flex bg-green-100 rounded-full items-center justify-center w-10 h-10"><i class="fa-solid fa-dollar-sign text-green-600"></i></div>
+        <h5 class="font-bold text-lg">Orçamento #001</h5>
     </div>
-    <div>
-        <input type="text" placeholder="Serviço..." x-model="novoServico">
-        <input type="text" placeholder="Valor..." x-model.number="novoValor">
-        <button @click="if (!novoServico || !novoValor) return; servicos.push({nome: novoServico, valor: novoValor}); novoServico=''; novoValor=0;">..</button>
+    <hr class="mb-5">
+    <div class="grid grid-cols-3 gap-3 mb-4">
+        <input type="text" placeholder="Serviço..." x-model="novoServico" class="col-span-2 w-full border bg-gray-50 rounded p-1">
+        <input type="text" placeholder="Valor..." x-model.number="novoValor" class="col-span-1 w-full border bg-gray-50 rounded p-1">
+        <button @click="if (!novoServico || !novoValor) return; servicos.push({nome: novoServico, valor: novoValor}); novoServico=''; novoValor=0;" class="bg-green-100 text-green-600 p-1 font-bold rounded">Adicionar</button>
     </div>
     <ul>
         <template x-for="item in servicos">
-            <li>
-                <p x-text="item.nome"></p>
-                <p x-text="item.valor"></p>
+            <li class="flex justify-between bg-gray-50 rounded border border-gray-100 p-1 mb-3">
+                <p x-text="item.nome" class="text-md text-gray-700"></p>
+                <p x-text="'R$ ' + item.valor" class="font-bold text-md text-gray-700"></p>
             </li>
         </template>
     </ul>
-    <div>
-        <p>Total</p>
-        <span x-text="total"></span>
+    <div class="flex justify-between bg-gray-800 rounded border border-gray-100 p-2">
+        <p class="text-gray-300 font-bold text-lg">TOTAL</p>
+        <span x-text="'R$ ' + total" class="text-green-400 font-bold text-lg"></span>
+    </div>
     </div>
 </body>
 </html>
